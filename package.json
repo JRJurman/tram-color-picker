@@ -5,13 +5,15 @@
     "start": "webpack-serve",
     "prebuild": "cp -r ./public/ dist",
     "build": "webpack",
-    "test": "jasmine ./specs/specs.js"
+    "test": "jasmine ./specs/specs.js",
+    "deploy": "gh-pages -d dist -b gh-pages"
   },
   "keywords": [
     "tram-one"
   ],
   "dependencies": {
     "express": "^4.16.3",
+    "gh-pages": "^2.0.0",
     "jasmine": "^2.8.0",
     "tram-dev-server-config": "^1.0.1",
     "tram-one": "^7.0.0",
