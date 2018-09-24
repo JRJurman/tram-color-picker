@@ -1,8 +1,7 @@
 const Tram = require('tram-one')
 
-const app = new Tram()
+const app = new Tram({ defaultRoute: '/' })
 app.addRoute('/', require('./pages/rgb'))
-app.addRoute('/404', require('./pages/404'))
 app.addActions({ color: require('./actions/color') })
 
 // set the store and actions on the window
