@@ -6,6 +6,7 @@ module.exports = (attrs) => {
     width: ${attrs.size};
     height: ${attrs.size};
     background: ${attrs.color};
+    margin: 0.4em auto;
   `
   return html`
     <div style=${previewStyle} />

@@ -4,10 +4,10 @@ const html = Tram.html({
   'color-preview': require('../components/color-preview')
 })
 
-module.exports = (store, actions) => {
+module.exports = (store) => {
   const previewColor = `rgb(${store.color.red}, ${store.color.green}, ${store.color.blue})`
   return html`
-    <div>
+    <div style="zoom: 2; text-align: center;">
       <color-slider color='red' />
       <color-slider color='green' />
       <color-slider color='blue' />
