@@ -34,7 +34,7 @@ function r(e,t){if(e===t)return 0;for(var n=e.length,r=t.length,o=0,i=Math.min(n
       ${e.color.slice(0,1)[0].toUpperCase()} <input
         style=${i} type="range"
         min="0" max="255" value=${t[e.color]}
-        onchange=${t=>{n.setColorValue({color:e.color,value:t.currentTarget.value})}} />
+        oninput=${t=>{n.setColorValue({color:e.color,value:t.currentTarget.value})}} />
     </div>
   `})},function(e,t,n){const r=n(0).html();e.exports=(e=>{return r`
     <div style=${`\n    width: ${e.size};\n    height: ${e.size};\n    background: ${e.color};\n    margin: 0.4em auto;\n  `} />
