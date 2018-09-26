@@ -50,7 +50,7 @@ module.exports = (attrs) => {
       ${prefix} <input
         style=${sliderStyle} type="range"
         min="0" max="255" value=${color[attrs.color]}
-        onchange=${setColorValue} />
+        oninput=${setColorValue} />
     </div>
   `
 }
